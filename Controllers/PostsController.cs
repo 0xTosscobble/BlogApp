@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BlogApp.Data;
 using BlogApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BlogApp.Controllers
 {
@@ -56,6 +57,7 @@ namespace BlogApp.Controllers
         }
 
         // GET: Posts/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();

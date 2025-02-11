@@ -25,6 +25,12 @@ namespace BlogApp.Controllers
             return View(await _context.Post.ToListAsync());
         }
 
+        // GET: Posts/ShowSearchForm
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
         // GET: Posts/Details/5
         public async Task<IActionResult> Details(int? id)
         {

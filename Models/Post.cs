@@ -6,7 +6,7 @@
         public string BlogPostTitle { get; set; }
         public string BlogPostContent { get; set; }
 
-        public Joke()
+        public Post()
         {
 
         }

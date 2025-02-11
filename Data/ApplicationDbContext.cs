@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using BlogApp.Models;
 
 namespace BlogApp.Data
 {
@@ -9,5 +10,6 @@ namespace BlogApp.Data
             : base(options)
         {
         }
+        public DbSet<BlogApp.Models.Post> Post { get; set; } = default!;
     }
 }
